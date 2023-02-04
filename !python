@@ -4,7 +4,7 @@ inp = input("enter a file name you want to open")
 try:
     fhand = open(inp)
 except:
-    print("the file you want to open is not working ",inp)
+    print("the file you want to open is not working",fhand)
     close()
 
 counter = dict()
@@ -19,11 +19,4 @@ def word_counter():
 
 word_counter()
 
-arrange = list()
-for key,value in list(counter.items()):
-    arrange.append((value,key))
-
-
-arrange.sort(reverse = True)
-
-print(arrange)
+print(counter)            
