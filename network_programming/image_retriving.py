@@ -23,6 +23,7 @@ mysock.close()
 pos = picture.find(b"\r\n\r\n")
 print('Header length', pos)
 print(picture[:pos].decode())
+print('P')
 
 # Skip past the header and save the picture data
 picture = picture[pos+4:]
