@@ -1,4 +1,5 @@
 #binary file mtlb file expect txt like video,img
+
 import urllib.request, urllib.error, urllib.parse
 
 image = urllib.request.urlopen('http://data.pr4e.org/cover3.jpg').read()

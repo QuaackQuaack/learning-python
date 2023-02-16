@@ -6,5 +6,6 @@ import urllib.request
 urlhand = urllib.request.urlopen('http://data.pr4e.org/romeo.txt')
 for line in urlhand:
     print(line.decode().strip())
+
     
 
