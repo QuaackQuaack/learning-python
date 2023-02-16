@@ -20,4 +20,4 @@ soup = lovely_soup(url)
 titles = soup.findall('p',{'clss':'title'})
 for title in titles:
     print(title.txt)
-
+#note this is still incomplete
