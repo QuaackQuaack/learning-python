@@ -1,0 +1,23 @@
+import ssl
+from bs4 import BeautifulSoup
+import urllib.request, urllib.error, urllib.parse
+from fake_useragent import UserAgent
+import re
+ua = UserAgent()
+
+# to ignore SSL ceritified error
+cntxt = ssl.create_default_context()
+cntxt.check_hostname = False
+cntxt.verify_mode = ssl.CERT_NONE
+
+def lovely_soup(u):
+    r = get(u,headers={'User-Agent': ua.chrome})
+    return BeautifulSoup(r.text,'lxml')
+
+url = "https://www.reddit.com/r/Showerthoughts/top/?sort=top&t=week"
+soup = lovely_soup(url)
+
+titles = soup.findall('p',{'clss':'title'})
+for title in titles:
+    print(title.txt)
+
