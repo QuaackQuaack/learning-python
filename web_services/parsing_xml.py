@@ -10,7 +10,8 @@ data = '''
 </person> '''
 
 tree = ET.fromstring(data) #from converts string representation of XML intro 'tree'
-
+print(tree)
 print('Name:', tree.find('name').text)
+print(tree.find('email').text)
 print('Attr:',tree.find('email').get('hide'))
 
