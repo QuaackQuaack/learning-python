@@ -3,7 +3,7 @@ class student:
     increase_attendance = 1.04 
 
 
-    def __init__(self,fname,lname,attendance,grade):
+    def __init__(self,fname,lname,attendance,grade): # initializing 
         self.fname = fname
         self.lname = lname
         self.attendance = attendance
