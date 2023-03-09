@@ -8,7 +8,7 @@ class CricketFan(PartyAnimal): # for understanding it's like pasing class inside
       self.party()
       print(self.name,"points",self.points)
 
-s = PartyAnimal("Sally")
+s = PartyAnimal("Sally") #debug
 s.party()
 j = CricketFan("Jim")
 j.party()
