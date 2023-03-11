@@ -1,4 +1,12 @@
-#
+# note: my turtle module was not working, So I copied all the repository
+# of python turtle and use it as import turtle 
+# all the codes of this file belongs to all contributer 
+
+
+
+
+
+
 # turtle.py: a Tkinter based turtle graphics module for Python
 # Version 1.1b - 4. 5. 2009
 #
