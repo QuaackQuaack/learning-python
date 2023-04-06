@@ -8,7 +8,7 @@ class FrenchDeck:
     ranks = [str(n) for n in range(2,11)]+list('JQKA')
     suits = 'spades diamond clubs hearts'.split() # this is to convert str suits to list suits 
     suit_values = dict(spades=3, hearts = 2, diamonds = 1, clubs = 0)
-
+#dict assign way 
     def __init__(self):
         self._cards= [Card(rank,suit) for suit in self.suits  # suit it to iterate from spades to diamond
                       for rank in self.ranks] # rank is to iterate from 2 to 11
