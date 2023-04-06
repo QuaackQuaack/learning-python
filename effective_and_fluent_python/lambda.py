@@ -1,4 +1,3 @@
-
 #lambda is to anonymous function means that function is without  a name 
 
 def cube(x): # this is normal function example 
